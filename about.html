@@ -158,37 +158,55 @@
   </div>
 </div>
 <script>
-  // This script makes the dropdown parent links clickable
-  // Add this script at the end of your body tag
-
+  // This script makes the dropdown parent links clickable only in desktop view
   document.addEventListener('DOMContentLoaded', function() {
     // Get all dropdown toggle elements
     const dropdownToggles = document.querySelectorAll('.dropdown-hover > a');
     
-    dropdownToggles.forEach(function(toggle) {
-      // Extract the link destination from the dropdown ID
-      let linkDestination = '';
-      
-      if (toggle.id === 'dropdownMenuServices') {
-        linkDestination = 'services.html';
-      } else if (toggle.id === 'dropdownMenuAI') {
-        linkDestination = 'ai-tools.html';
-      }
-      
-      // Add click event listener for navigation
-      toggle.addEventListener('click', function(e) {
-        // Only prevent default behavior if clicking the dropdown arrow
-        const clickedOnArrow = e.target.tagName.toLowerCase() === 'img' || 
-                              e.target.closest('img.arrow');
+    // Create a media query for desktop view (min-width: 992px is Bootstrap's lg breakpoint)
+    const desktopMediaQuery = window.matchMedia('(min-width: 992px)');
+    
+    // Function to handle desktop navigation
+    function setupDesktopNavigation(isDesktop) {
+      dropdownToggles.forEach(function(toggle) {
+        // Extract the link destination from the dropdown ID
+        let linkDestination = '';
         
-        if (!clickedOnArrow) {
-          window.location.href = linkDestination;
+        if (toggle.id === 'dropdownMenuServices') {
+          linkDestination = 'services.html';
+        } else if (toggle.id === 'dropdownMenuAI') {
+          linkDestination = 'ai-tools.html';
+        }
+        
+        // Remove any existing click listeners to avoid duplicates
+        toggle.removeEventListener('click', handleDesktopClick);
+        
+        // Only add desktop navigation in desktop view
+        if (isDesktop) {
+          toggle.addEventListener('click', handleDesktopClick);
+        }
+        
+        // Function to handle desktop click
+        function handleDesktopClick(e) {
+          // Only prevent default behavior if clicking the dropdown arrow
+          const clickedOnArrow = e.target.tagName.toLowerCase() === 'img' ||
+                                e.target.closest('img.arrow');
+          
+          if (!clickedOnArrow) {
+            window.location.href = linkDestination;
+          }
         }
       });
+    }
+    
+    // Initial setup based on current viewport
+    setupDesktopNavigation(desktopMediaQuery.matches);
+    
+    // Update when viewport changes
+    desktopMediaQuery.addEventListener('change', function(e) {
+      setupDesktopNavigation(e.matches);
     });
   });
-
-
 </script>
 <!-- End Navbar -->
 
