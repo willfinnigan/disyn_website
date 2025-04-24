@@ -42,4 +42,3 @@ To view the website locally, simply open the index.html file in a web browser.
 - Add real images and content specific to Disyn Biotec
 - Implement form submission functionality for the contact form
 - Add case studies and publications pages
-- Develop a blog section
