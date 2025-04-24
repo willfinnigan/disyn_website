@@ -19,15 +19,16 @@ The website is built using Bootstrap 5 and the Material Kit theme. The structure
 
 ### Main Pages
 - **index.html**: Home page with an overview of Disyn Biotec, their services, and AI tools
-- **pages/about.html**: About page with information about Disyn Biotec and their team
-- **pages/services.html**: Services page detailing the biocatalysis lab services offered
-- **pages/ai-tools.html**: AI Tools page showcasing the AI tools being developed
-- **pages/contact.html**: Contact page with a contact form and contact information
+- **about.html**: About page with information about Disyn Biotec and their team
+- **services.html**: Services page detailing the biocatalysis lab services offered
+- **ai-tools.html**: AI Tools page showcasing the AI tools being developed
+- **contact.html**: Contact page with a contact form and contact information
 
 ### Assets
 - **assets/css/**: CSS files including Material Kit CSS
 - **assets/js/**: JavaScript files including Material Kit JS
 - **assets/img/**: Image files (currently using placeholder images)
+    - **assets/img/logo**: Disyn Biotec logo
 - **assets/fonts/**: Font files including Nucleo icons
 
 ### Theme

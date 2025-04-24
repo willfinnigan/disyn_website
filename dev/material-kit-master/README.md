@@ -95,7 +95,7 @@ material-kit
   │       └── material-kit.scss
   ├── docs
   │   ├── documentation.html
-  ├── pages/
+  ├── 
   ├── sections/
   ├── CHANGELOG.md
   ├── gulpfile.js

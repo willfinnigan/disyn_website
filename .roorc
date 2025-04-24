@@ -1,0 +1,8 @@
+{
+  "readFiles": [
+    "README.md"
+  ],
+  "rules": {
+    "alwaysReadReadme": true
+  }
+}
