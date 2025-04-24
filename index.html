@@ -23,140 +23,188 @@
   
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-kit.css" rel="stylesheet" />
+  
+  <!-- Custom styles -->
+  <style>
+    /* Make all service card images the same size with proper cropping */
+    .card-header .blur-shadow-image img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+    /* Add more vertical spacing between service cards */
+    .col-md-6.mb-4 .card {
+      margin-bottom: 2.5rem;
+    }
+  </style>
 </head>
 
 <body class="index-page bg-gray-200">
   
-  <!-- Navbar -->
-  <div class="container position-sticky z-index-sticky top-0">
-    <div class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand font-weight-bolder ms-sm-3 d-flex align-items-center" href="index.html">
-              <img src="./assets/img/logo/colour_standard_logo.png" alt="Disyn Biotec Logo" height="60" class="me-3">
-              <span class="text-sm"></span>
-            </a>
-            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="about.html">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">info</i>
-                    About Us
-                  </a>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuServices" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">science</i>
-                    Services
-                    <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuServices">
-                    <div class="d-none d-lg-block">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our Services
-                      </h6>
-                      <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
-                        <span>Enzyme Panel Construction</span>
-                      </a>
-                      <a href="services.html#screening" class="dropdown-item border-radius-md">
-                        <span>Screening</span>
-                      </a>
-                      <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
-                        <span>Enzyme Engineering</span>
-                      </a>
-                      <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
-                        <span>Reaction Optimization</span>
-                      </a>
-                    </div>
-                    <div class="d-lg-none">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our Services
-                      </h6>
-                      <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
-                        <span>Enzyme Panel Construction</span>
-                      </a>
-                      <a href="services.html#screening" class="dropdown-item border-radius-md">
-                        <span>Screening</span>
-                      </a>
-                      <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
-                        <span>Enzyme Engineering</span>
-                      </a>
-                      <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
-                        <span>Reaction Optimization</span>
-                      </a>
-                    </div>
+<!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand font-weight-bolder ms-sm-3 d-flex align-items-center" href="index.html">
+            <img src="./assets/img/logo/colour_standard_logo.png" alt="Disyn Biotec Logo" height="60" class="me-3">
+            <span class="text-sm"></span>
+          </a>
+          <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+            <ul class="navbar-nav navbar-nav-hover ms-auto">
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="about.html">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">info</i>
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-hover mx-2">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuServices" href="services.html" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">science</i>
+                  Services
+                  <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                </a>
+                <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuServices">
+                  <div class="d-none d-lg-block">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our Services
+                    </h6>
+                    <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
+                      <span>Enzyme Panel Construction</span>
+                    </a>
+                    <a href="services.html#screening" class="dropdown-item border-radius-md">
+                      <span>Screening</span>
+                    </a>
+                    <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
+                      <span>Enzyme Engineering</span>
+                    </a>
+                    <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
+                      <span>Reaction Optimization</span>
+                    </a>
                   </div>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuAI" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">smart_toy</i>
-                    AI Tools
-                    <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuAI">
-                    <div class="d-none d-lg-block">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our AI Tools
-                      </h6>
-                      <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
-                        <span>RetroBioCat Platform</span>
-                      </a>
-                      <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
-                        <span>Planning Tools</span>
-                      </a>
-                      <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
-                        <span>Evaluation Tools</span>
-                      </a>
-                      <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
-                        <span>Execution Tools</span>
-                      </a>
-                    </div>
-                    <div class="d-lg-none">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our AI Tools
-                      </h6>
-                      <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
-                        <span>RetroBioCat Platform</span>
-                      </a>
-                      <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
-                        <span>Planning Tools</span>
-                      </a>
-                      <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
-                        <span>Evaluation Tools</span>
-                      </a>
-                      <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
-                        <span>Execution Tools</span>
-                      </a>
-                    </div>
+                  <div class="d-lg-none">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our Services
+                    </h6>
+                    <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
+                      <span>Enzyme Panel Construction</span>
+                    </a>
+                    <a href="services.html#screening" class="dropdown-item border-radius-md">
+                      <span>Screening</span>
+                    </a>
+                    <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
+                      <span>Enzyme Engineering</span>
+                    </a>
+                    <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
+                      <span>Reaction Optimization</span>
+                    </a>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="contact.html">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">contact_mail</i>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-hover mx-2">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuAI" href="ai-tools.html" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">smart_toy</i>
+                  AI Tools
+                  <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                </a>
+                <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuAI">
+                  <div class="d-none d-lg-block">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our AI Tools
+                    </h6>
+                    <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
+                      <span>RetroBioCat Platform</span>
+                    </a>
+                    <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
+                      <span>Planning Tools</span>
+                    </a>
+                    <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
+                      <span>Evaluation Tools</span>
+                    </a>
+                    <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
+                      <span>Execution Tools</span>
+                    </a>
+                  </div>
+                  <div class="d-lg-none">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our AI Tools
+                    </h6>
+                    <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
+                      <span>RetroBioCat Platform</span>
+                    </a>
+                    <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
+                      <span>Planning Tools</span>
+                    </a>
+                    <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
+                      <span>Evaluation Tools</span>
+                    </a>
+                    <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
+                      <span>Execution Tools</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="contact.html">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">contact_mail</i>
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </div>
-  <!-- End Navbar -->
+</div>
+<script>
+  // This script makes the dropdown parent links clickable
+  // Add this script at the end of your body tag
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all dropdown toggle elements
+    const dropdownToggles = document.querySelectorAll('.dropdown-hover > a');
+    
+    dropdownToggles.forEach(function(toggle) {
+      // Extract the link destination from the dropdown ID
+      let linkDestination = '';
+      
+      if (toggle.id === 'dropdownMenuServices') {
+        linkDestination = 'services.html';
+      } else if (toggle.id === 'dropdownMenuAI') {
+        linkDestination = 'ai-tools.html';
+      }
+      
+      // Add click event listener for navigation
+      toggle.addEventListener('click', function(e) {
+        // Only prevent default behavior if clicking the dropdown arrow
+        const clickedOnArrow = e.target.tagName.toLowerCase() === 'img' || 
+                              e.target.closest('img.arrow');
+        
+        if (!clickedOnArrow) {
+          window.location.href = linkDestination;
+        }
+      });
+    });
+  });
+
+
+</script>
+<!-- End Navbar -->
 
   <!-- Header -->
   <header class="header-2">
-    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/bg-landing.jpg')">
-      <span class="mask bg-gradient-primary opacity-4"></span>
+    <div class="page-header min-vh-75 relative" style="background-image: url('./assets/img/stock/shutterstock_587491055.jpg')">
+      <span class="mask bg-gradient-dark opacity-4"></span>
       <div class="container">
         <div class="row">
           <div class="col-lg-7 text-center mx-auto">
@@ -431,94 +479,6 @@
     </section>
     <!-- End Section: AI Tools -->
 
-    <!-- Section: Contact -->
-    <section class="py-lg-5">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card box-shadow-xl overflow-hidden mb-5">
-              <div class="row">
-                <div class="col-lg-5 position-relative bg-cover px-0" style="background-image: url('https://images.unsplash.com/photo-1543333995-a78aea2eee50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')" loading="lazy">
-                  <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
-                    <div class="mask bg-gradient-primary opacity-9"></div>
-                    <div class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2">
-                      <h3 class="text-white">Contact Information</h3>
-                      <p class="text-white opacity-8 mb-4">Fill up the form and our Team will get back to you within 24 hours.</p>
-                      <div class="d-flex p-2 text-white">
-                        <div>
-                          <i class="fas fa-map-marker-alt text-sm"></i>
-                        </div>
-                        <div class="ps-3">
-                          <span class="text-sm opacity-8">Manchester, UK</span>
-                        </div>
-                      </div>
-                      <div class="d-flex p-2 text-white">
-                        <div>
-                          <i class="fas fa-envelope text-sm"></i>
-                        </div>
-                        <div class="ps-3">
-                          <span class="text-sm opacity-8">info@disynbiotec.com</span>
-                        </div>
-                      </div>
-                      <div class="mt-4">
-                        <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" title="Follow us on LinkedIn">
-                          <i class="fab fa-linkedin"></i>
-                        </button>
-                        <button type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter">
-                          <i class="fab fa-twitter"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <form class="p-3" id="contact-form" method="post">
-                    <div class="card-header px-4 py-sm-5 py-3">
-                      <h2>Get in Touch</h2>
-                      <p class="lead">We'd like to talk with you.</p>
-                    </div>
-                    <div class="card-body pt-1">
-                      <div class="row">
-                        <div class="col-md-6 pe-2">
-                          <div class="input-group input-group-static mb-4">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" placeholder="First Name">
-                          </div>
-                        </div>
-                        <div class="col-md-6 ps-2">
-                          <div class="input-group input-group-static mb-4">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="Last Name">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <div class="input-group input-group-static">
-                          <label>Email Address</label>
-                          <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <div class="input-group input-group-static">
-                          <label>Your Message</label>
-                          <textarea name="message" class="form-control" id="message" rows="6" placeholder="I want to know more about..."></textarea>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <button type="submit" class="btn bg-gradient-primary w-100">Send Message</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Section: Contact -->
 
     <!-- Footer -->
     <footer class="footer pt-5 mt-5">
@@ -653,5 +613,6 @@
   <script src="./assets/js/popper.min.js" type="text/javascript"></script>
   <script src="./assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="./assets/js/material-kit.js" type="text/javascript"></script>
+  
 </body>
 </html>

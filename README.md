@@ -35,10 +35,11 @@ The website is built using Bootstrap 5 and the Material Kit theme. The structure
 The website uses the Material Kit theme, which is a Bootstrap 5 UI Kit. The theme files are located in the dev/material-kit-master directory.
 
 ## Development
-
 To view the website locally, simply open the index.html file in a web browser.
+
+## Contact Form Setup
+The contact form uses [Web3Forms](https://web3forms.com/) to handle form submissions without requiring a backend server. To set up the contact form:
 
 ## Future Improvements
 - Add real images and content specific to Disyn Biotec
-- Implement form submission functionality for the contact form
 - Add case studies and publications pages

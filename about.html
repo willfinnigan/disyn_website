@@ -27,131 +27,164 @@
 
 <body class="about-us bg-gray-200">
   
-  <!-- Navbar -->
-  <div class="container position-sticky z-index-sticky top-0">
-    <div class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand font-weight-bolder ms-sm-3 d-flex align-items-center" href="index.html">
-              <img src="./assets/img/logo/colour_standard_logo.png" alt="Disyn Biotec Logo" height="60" class="me-3">
-              <span class="text-sm"></span>
-            </a>
-            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="about.html">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">info</i>
-                    About Us
-                  </a>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuServices" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">science</i>
-                    Services
-                    <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuServices">
-                    <div class="d-none d-lg-block">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our Services
-                      </h6>
-                      <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
-                        <span>Enzyme Panel Construction</span>
-                      </a>
-                      <a href="services.html#screening" class="dropdown-item border-radius-md">
-                        <span>Screening</span>
-                      </a>
-                      <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
-                        <span>Enzyme Engineering</span>
-                      </a>
-                      <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
-                        <span>Reaction Optimization</span>
-                      </a>
-                    </div>
-                    <div class="d-lg-none">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our Services
-                      </h6>
-                      <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
-                        <span>Enzyme Panel Construction</span>
-                      </a>
-                      <a href="services.html#screening" class="dropdown-item border-radius-md">
-                        <span>Screening</span>
-                      </a>
-                      <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
-                        <span>Enzyme Engineering</span>
-                      </a>
-                      <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
-                        <span>Reaction Optimization</span>
-                      </a>
-                    </div>
+<!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 p-2 start-0 end-0 mx-4">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand font-weight-bolder ms-sm-3 d-flex align-items-center" href="index.html">
+            <img src="./assets/img/logo/colour_standard_logo.png" alt="Disyn Biotec Logo" height="60" class="me-3">
+            <span class="text-sm"></span>
+          </a>
+          <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+            <ul class="navbar-nav navbar-nav-hover ms-auto">
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="about.html">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">info</i>
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item dropdown dropdown-hover mx-2">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuServices" href="services.html" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">science</i>
+                  Services
+                  <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                </a>
+                <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuServices">
+                  <div class="d-none d-lg-block">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our Services
+                    </h6>
+                    <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
+                      <span>Enzyme Panel Construction</span>
+                    </a>
+                    <a href="services.html#screening" class="dropdown-item border-radius-md">
+                      <span>Screening</span>
+                    </a>
+                    <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
+                      <span>Enzyme Engineering</span>
+                    </a>
+                    <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
+                      <span>Reaction Optimization</span>
+                    </a>
                   </div>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-2">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuAI" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">smart_toy</i>
-                    AI Tools
-                    <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuAI">
-                    <div class="d-none d-lg-block">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our AI Tools
-                      </h6>
-                      <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
-                        <span>RetroBioCat Platform</span>
-                      </a>
-                      <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
-                        <span>Planning Tools</span>
-                      </a>
-                      <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
-                        <span>Evaluation Tools</span>
-                      </a>
-                      <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
-                        <span>Execution Tools</span>
-                      </a>
-                    </div>
-                    <div class="d-lg-none">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Our AI Tools
-                      </h6>
-                      <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
-                        <span>RetroBioCat Platform</span>
-                      </a>
-                      <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
-                        <span>Planning Tools</span>
-                      </a>
-                      <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
-                        <span>Evaluation Tools</span>
-                      </a>
-                      <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
-                        <span>Execution Tools</span>
-                      </a>
-                    </div>
+                  <div class="d-lg-none">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our Services
+                    </h6>
+                    <a href="services.html#enzyme-panel" class="dropdown-item border-radius-md">
+                      <span>Enzyme Panel Construction</span>
+                    </a>
+                    <a href="services.html#screening" class="dropdown-item border-radius-md">
+                      <span>Screening</span>
+                    </a>
+                    <a href="services.html#enzyme-engineering" class="dropdown-item border-radius-md">
+                      <span>Enzyme Engineering</span>
+                    </a>
+                    <a href="services.html#reaction-optimization" class="dropdown-item border-radius-md">
+                      <span>Reaction Optimization</span>
+                    </a>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="contact.html">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">contact_mail</i>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-hover mx-2">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" id="dropdownMenuAI" href="ai-tools.html" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">smart_toy</i>
+                  AI Tools
+                  <img src="./assets/img/nav_icons/down-arrow-dark.svg" alt="down-arrow" class="arrow ms-auto ms-md-2">
+                </a>
+                <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuAI">
+                  <div class="d-none d-lg-block">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our AI Tools
+                    </h6>
+                    <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
+                      <span>RetroBioCat Platform</span>
+                    </a>
+                    <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
+                      <span>Planning Tools</span>
+                    </a>
+                    <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
+                      <span>Evaluation Tools</span>
+                    </a>
+                    <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
+                      <span>Execution Tools</span>
+                    </a>
+                  </div>
+                  <div class="d-lg-none">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                      Our AI Tools
+                    </h6>
+                    <a href="ai-tools.html#retrobiocatalysis" class="dropdown-item border-radius-md">
+                      <span>RetroBioCat Platform</span>
+                    </a>
+                    <a href="ai-tools.html#planning" class="dropdown-item border-radius-md">
+                      <span>Planning Tools</span>
+                    </a>
+                    <a href="ai-tools.html#evaluation" class="dropdown-item border-radius-md">
+                      <span>Evaluation Tools</span>
+                    </a>
+                    <a href="ai-tools.html#execution" class="dropdown-item border-radius-md">
+                      <span>Execution Tools</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2 d-flex cursor-pointer align-items-center font-weight-semibold" href="contact.html">
+                  <i class="material-symbols-rounded opacity-6 me-2 text-md">contact_mail</i>
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </div>
-  <!-- End Navbar -->
+</div>
+<script>
+  // This script makes the dropdown parent links clickable
+  // Add this script at the end of your body tag
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all dropdown toggle elements
+    const dropdownToggles = document.querySelectorAll('.dropdown-hover > a');
+    
+    dropdownToggles.forEach(function(toggle) {
+      // Extract the link destination from the dropdown ID
+      let linkDestination = '';
+      
+      if (toggle.id === 'dropdownMenuServices') {
+        linkDestination = 'services.html';
+      } else if (toggle.id === 'dropdownMenuAI') {
+        linkDestination = 'ai-tools.html';
+      }
+      
+      // Add click event listener for navigation
+      toggle.addEventListener('click', function(e) {
+        // Only prevent default behavior if clicking the dropdown arrow
+        const clickedOnArrow = e.target.tagName.toLowerCase() === 'img' || 
+                              e.target.closest('img.arrow');
+        
+        if (!clickedOnArrow) {
+          window.location.href = linkDestination;
+        }
+      });
+    });
+  });
+
+
+</script>
+<!-- End Navbar -->
 
   <!-- Header -->
   <header class="bg-gradient-dark">
